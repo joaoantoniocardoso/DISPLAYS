@@ -1,4 +1,4 @@
-const uint8_t Font_8_MykeBitmaps[] PROGMEM = {
+static const uint8_t Font_8_MykeBitmaps[] PROGMEM = {
   0xF2,	// char33
   0xB6,0x80,	// char34
   0x57,0xD5,0xF5,0x00,	// char35
@@ -95,7 +95,7 @@ const uint8_t Font_8_MykeBitmaps[] PROGMEM = {
   0xED,0xC0	// char126
 };
 
-const GFXglyph Font_8_MykeGlyphs[] PROGMEM = {
+static const GFXglyph Font_8_MykeGlyphs[] PROGMEM = {
   { 0, 0, 0, 8, 0, 0 },	// char32
   { 0, 1, 7, 8, 3, -7 },	// char33
   { 1, 3, 3, 8, 1, -7 },	// char34
@@ -193,7 +193,7 @@ const GFXglyph Font_8_MykeGlyphs[] PROGMEM = {
   { 347, 5, 2, 8, 1, -6 }	// char126
 };
 
-const GFXfont Font_8_Myke PROGMEM = {
+static const GFXfont Font_8_Myke PROGMEM = {
  (uint8_t *)Font_8_MykeBitmaps,
  (GFXglyph *)Font_8_MykeGlyphs,
  32, 126, 9};

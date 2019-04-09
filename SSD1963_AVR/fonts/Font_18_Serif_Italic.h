@@ -1,4 +1,4 @@
-const uint8_t Font_18_Serif_ItalicBitmaps[] PROGMEM = {
+static const uint8_t Font_18_Serif_ItalicBitmaps[] PROGMEM = {
   0x01, 0xC0, 0xF0, 0x3C, 0x0F, 0x03, 0x81, 0xE0, 0x70, 0x1C, 0x06, 0x01,
   0x80, 0xC0, 0x30, 0x0C, 0x02, 0x01, 0x80, 0x40, 0x10, 0x00, 0x00, 0x01,
   0x80, 0xF0, 0x3C, 0x06, 0x00, 0x38, 0x77, 0x8F, 0x78, 0xF7, 0x0E, 0x60,
@@ -345,7 +345,7 @@ const uint8_t Font_18_Serif_ItalicBitmaps[] PROGMEM = {
   0x0E, 0x00, 0xC0, 0x1C, 0x01, 0x80, 0x70, 0x00, 0x1E, 0x00, 0x3F, 0xE1,
   0xF8, 0x7F, 0xC0, 0x07, 0x80 };
 
-const GFXglyph Font_18_Serif_ItalicGlyphs[] PROGMEM = {
+static const GFXglyph Font_18_Serif_ItalicGlyphs[] PROGMEM = {
   {     0,   0,   0,   9,    0,    1 },   // 0x20 ' '
   {     0,  10,  23,  12,    1,  -22 },   // 0x21 '!'
   {    29,  12,   9,  12,    4,  -22 },   // 0x22 '"'
@@ -442,7 +442,7 @@ const GFXglyph Font_18_Serif_ItalicGlyphs[] PROGMEM = {
   {  4077,  12,  31,  14,    0,  -24 },   // 0x7D '}'
   {  4124,  17,   4,  19,    1,  -10 } }; // 0x7E '~'
 
-const GFXfont Font_18_Serif_Italic PROGMEM = {
+static const GFXfont Font_18_Serif_Italic PROGMEM = {
   (uint8_t  *)Font_18_Serif_ItalicBitmaps,
   (GFXglyph *)Font_18_Serif_ItalicGlyphs,
   0x20, 0x7E, 42 };

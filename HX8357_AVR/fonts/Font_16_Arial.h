@@ -1,4 +1,4 @@
-const uint8_t Font_16_ArialBitmaps[] PROGMEM = {
+static const uint8_t Font_16_ArialBitmaps[] PROGMEM = {
   0xFF,0xD0,	// char33
   0x99,0x99,	// char34
   0x09,0x04,0x84,0x82,0x4F,0xF8,0x90,0x90,0x48,0xFF,0x92,0x12,0x09,0x00,	// char35
@@ -101,7 +101,7 @@ const uint8_t Font_16_ArialBitmaps[] PROGMEM = {
   0x78,0xC7,0x80	// char126
 };
 
-const GFXglyph Font_16_ArialGlyphs[] PROGMEM = {
+static const GFXglyph Font_16_ArialGlyphs[] PROGMEM = {
   { 0, 0, 0, 16, 0, 0 },	// char32
   { 0, 1, 12, 16, 6, -13 },	// char33
   { 2, 4, 4, 16, 6, -13 },	// char34
@@ -199,7 +199,7 @@ const GFXglyph Font_16_ArialGlyphs[] PROGMEM = {
   { 902, 9, 2, 16, 4, -13 }	// char126
 };
 
-const GFXfont Font_16_Arial PROGMEM = {
+static const GFXfont Font_16_Arial PROGMEM = {
  (uint8_t *)Font_16_ArialBitmaps,
  (GFXglyph *)Font_16_ArialGlyphs,
  32, 126, 16};

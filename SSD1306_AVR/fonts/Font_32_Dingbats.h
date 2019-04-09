@@ -1,4 +1,4 @@
-const uint8_t Font_32_DingbatsBitmaps[] PROGMEM = {
+static const uint8_t Font_32_DingbatsBitmaps[] PROGMEM = {
   0x02,0x40,0x00,0x7E,0x00,0x06,0xE0,0x01,0xEE,0x00,0x66,0x60,0x18,0x66,0x06,0x66,
   0x60,0xCC,0x6C,0x30,0x06,0xCC,0x08,0xDB,0x83,0x0D,0x98,0xE1,0xB1,0xEC,0x36,0x01,
   0x86,0xC0,0x30,0xD8,0x06,0x1B,0x00,0xFF,0x60,0x1F,0xEC,	// char33
@@ -285,7 +285,7 @@ const uint8_t Font_32_DingbatsBitmaps[] PROGMEM = {
   0x18,0x0C,0x63,0xE0,0x07,0x80	// char126
 };
 
-const GFXglyph Font_32_DingbatsGlyphs[] PROGMEM = {
+static const GFXglyph Font_32_DingbatsGlyphs[] PROGMEM = {
   { 0, 0, 0, 32, 0, 0 },	// char32
   { 0, 19, 18, 32, 5, -21 },	// char33
   { 43, 19, 19, 32, 5, -22 },	// char34
@@ -383,7 +383,7 @@ const GFXglyph Font_32_DingbatsGlyphs[] PROGMEM = {
   { 3756, 23, 13, 32, 4, -16 }	// char126
 };
 
-const GFXfont Font_32_Dingbats PROGMEM = {
+static const GFXfont Font_32_Dingbats PROGMEM = {
  (uint8_t *)Font_32_DingbatsBitmaps,
  (GFXglyph *)Font_32_DingbatsGlyphs,
  32, 126, 24};

@@ -1,4 +1,4 @@
-const uint8_t Font_24_Mono_Bold_ObliqueBitmaps[] PROGMEM = {
+static const uint8_t Font_24_Mono_Bold_ObliqueBitmaps[] PROGMEM = {
   0x01, 0xE0, 0x3F, 0x07, 0xF0, 0xFF, 0x0F, 0xF0, 0xFF, 0x0F, 0xE0, 0xFE,
   0x0F, 0xE0, 0xFE, 0x0F, 0xC0, 0xFC, 0x1F, 0xC1, 0xF8, 0x1F, 0x81, 0xF8,
   0x1F, 0x81, 0xF0, 0x1F, 0x01, 0xF0, 0x1E, 0x00, 0x80, 0x00, 0x00, 0x00,
@@ -637,7 +637,7 @@ const uint8_t Font_24_Mono_Bold_ObliqueBitmaps[] PROGMEM = {
   0xFF, 0xCF, 0xFF, 0xFE, 0x0F, 0xFF, 0x38, 0x0F, 0xFC, 0x00, 0x0F, 0xE0,
   0x00, 0x0F, 0x80 };
 
-const GFXglyph Font_24_Mono_Bold_ObliqueGlyphs[] PROGMEM = {
+static const GFXglyph Font_24_Mono_Bold_ObliqueGlyphs[] PROGMEM = {
   {     0,   0,   0,  28,    0,    1 },   // 0x20 ' '
   {     0,  12,  31,  28,   12,  -29 },   // 0x21 '!'
   {    47,  17,  14,  28,   11,  -28 },   // 0x22 '"'
@@ -734,7 +734,7 @@ const GFXglyph Font_24_Mono_Bold_ObliqueGlyphs[] PROGMEM = {
   {  7527,  17,  37,  28,    6,  -29 },   // 0x7D '}'
   {  7606,  23,  10,  28,    5,  -17 } }; // 0x7E '~'
 
-const GFXfont Font_24_Mono_Bold_Oblique PROGMEM = {
+static const GFXfont Font_24_Mono_Bold_Oblique PROGMEM = {
   (uint8_t  *)Font_24_Mono_Bold_ObliqueBitmaps,
   (GFXglyph *)Font_24_Mono_Bold_ObliqueGlyphs,
   0x20, 0x7E, 47 };

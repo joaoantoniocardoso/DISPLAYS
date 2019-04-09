@@ -1,4 +1,4 @@
-const uint8_t Font_16_Sinclair_InvertedBitmaps[] PROGMEM = {
+static const uint8_t Font_16_Sinclair_InvertedBitmaps[] PROGMEM = {
   0xFF,0xFF,0xF0,0xF0,	// char33
   0xCF,0x3C,0xF3,	// char34
   0x30,0xC3,0x0C,0xFF,0xFF,0xFF,0x30,0xC3,0x0C,0x30,0xC3,0x0C,0xFF,0xFF,0xFF,0x30,
@@ -162,7 +162,7 @@ const uint8_t Font_16_Sinclair_InvertedBitmaps[] PROGMEM = {
   0x33,0x33,0xCC,0xCC	// char126
 };
 
-const GFXglyph Font_16_Sinclair_InvertedGlyphs[] PROGMEM = {
+static const GFXglyph Font_16_Sinclair_InvertedGlyphs[] PROGMEM = {
   { 0, 0, 0, 16, 0, 0 },	// char32
   { 0, 2, 14, 16, 8, -15 },	// char33
   { 4, 6, 4, 16, 6, -15 },	// char34
@@ -260,7 +260,7 @@ const GFXglyph Font_16_Sinclair_InvertedGlyphs[] PROGMEM = {
   { 1803, 8, 4, 16, 4, -13 }	// char126
 };
 
-const GFXfont Font_16_Sinclair_Inverted PROGMEM = {
+static const GFXfont Font_16_Sinclair_Inverted PROGMEM = {
  (uint8_t *)Font_16_Sinclair_InvertedBitmaps,
  (GFXglyph *)Font_16_Sinclair_InvertedGlyphs,
  32, 126, 16};

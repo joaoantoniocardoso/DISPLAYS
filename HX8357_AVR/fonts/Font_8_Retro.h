@@ -1,4 +1,4 @@
-const uint8_t Font_8_RetroBitmaps[] PROGMEM = {
+static const uint8_t Font_8_RetroBitmaps[] PROGMEM = {
   0xFF,0xCC,	// char33
   0x99,0x99,0x99,	// char34
   0x49,0x24,0x92,0xFF,0xF4,0x92,0xFF,0xF4,0x92,0x49,0x20,	// char35
@@ -95,7 +95,7 @@ const uint8_t Font_8_RetroBitmaps[] PROGMEM = {
   0x4A,0x6B,0x59,0x48	// char126
 };
 
-const GFXglyph Font_8_RetroGlyphs[] PROGMEM = {
+static const GFXglyph Font_8_RetroGlyphs[] PROGMEM = {
   { 0, 0, 0, 8, 0, 0 },	// char32
   { 0, 1, 14, 8, 3, -15 },	// char33
   { 2, 4, 6, 8, 2, -15 },	// char34
@@ -193,7 +193,7 @@ const GFXglyph Font_8_RetroGlyphs[] PROGMEM = {
   { 797, 5, 6, 8, 1, -11 }	// char126
 };
 
-const GFXfont Font_8_Retro PROGMEM = {
+static const GFXfont Font_8_Retro PROGMEM = {
  (uint8_t *)Font_8_RetroBitmaps,
  (GFXglyph *)Font_8_RetroGlyphs,
  32, 126, 16};

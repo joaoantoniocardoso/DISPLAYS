@@ -1,4 +1,4 @@
-const uint8_t Font_32_Segment_18_FullBitmaps[] PROGMEM = {
+static const uint8_t Font_32_Segment_18_FullBitmaps[] PROGMEM = {
   0x5F,0xFF,0xFF,0xE8,0x2F,0xFF,0xFF,0xFE,0x80,0x00,0x00,0x00,0x00,0x2F,0xFF,0xFF,
   0xF4,	// char33
   0x00,0x02,0x40,0x07,0xE0,0x07,0xE0,0x07,0xE0,0x07,0xE0,0x07,0xE0,0x07,0xE0,0x07,
@@ -826,7 +826,7 @@ const uint8_t Font_32_Segment_18_FullBitmaps[] PROGMEM = {
   0x1F,0xE0	// char126
 };
 
-const GFXglyph Font_32_Segment_18_FullGlyphs[] PROGMEM = {
+static const GFXglyph Font_32_Segment_18_FullGlyphs[] PROGMEM = {
   { 0, 0, 0, 32, 0, 0 },	// char32
   { 0, 3, 45, 32, 14, -47 },	// char33
   { 17, 16, 11, 32, 14, -48 },	// char34
@@ -924,7 +924,7 @@ const GFXglyph Font_32_Segment_18_FullGlyphs[] PROGMEM = {
   { 12428, 29, 27, 32, 1, -50 }	// char126
 };
 
-const GFXfont Font_32_Segment_18_Full PROGMEM = {
+static const GFXfont Font_32_Segment_18_Full PROGMEM = {
  (uint8_t *)Font_32_Segment_18_FullBitmaps,
  (GFXglyph *)Font_32_Segment_18_FullGlyphs,
  32, 126, 52};

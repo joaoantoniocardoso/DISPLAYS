@@ -1,4 +1,4 @@
-const uint8_t Font_16_FranklinGothicBitmaps[] PROGMEM = {
+static const uint8_t Font_16_FranklinGothicBitmaps[] PROGMEM = {
   0xFF,0xFF,0xCF,	// char33
   0xDE,0xF7,0xBD,0x80,	// char34
   0x19,0x86,0x61,0x99,0xFF,0x7F,0xCC,0xC3,0x33,0xFE,0xFF,0x99,0x86,0x61,0x98,	// char35
@@ -100,7 +100,7 @@ const uint8_t Font_16_FranklinGothicBitmaps[] PROGMEM = {
   0x73,0xFF,0xDE	// char126
 };
 
-const GFXglyph Font_16_FranklinGothicGlyphs[] PROGMEM = {
+static const GFXglyph Font_16_FranklinGothicGlyphs[] PROGMEM = {
   { 0, 0, 0, 16, 0, 0 },	// char32
   { 0, 2, 12, 16, 6, -13 },	// char33
   { 3, 5, 5, 16, 6, -13 },	// char34
@@ -198,7 +198,7 @@ const GFXglyph Font_16_FranklinGothicGlyphs[] PROGMEM = {
   { 927, 8, 3, 16, 5, -13 }	// char126
 };
 
-const GFXfont Font_16_FranklinGothic PROGMEM = {
+static const GFXfont Font_16_FranklinGothic PROGMEM = {
  (uint8_t *)Font_16_FranklinGothicBitmaps,
  (GFXglyph *)Font_16_FranklinGothicGlyphs,
  32, 126, 16};

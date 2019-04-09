@@ -1,4 +1,4 @@
-const uint8_t Font_16_Matrix_NumBitmaps[] PROGMEM = {
+static const uint8_t Font_16_Matrix_NumBitmaps[] PROGMEM = {
   0x1B,0x60,0x6D,0x80,0x00,0x30,0x03,0xC0,0x0C,0x00,0x0C,0x00,0xF0,0x03,0x00,0x03,
   0x00,0x3C,0x00,0xC0,0x00,0xC0,0x0F,0x00,0x30,0x00,0x30,0x03,0xC0,0x0C,0x00,0x01,
   0xB6,0x06,0xD8,	// char48
@@ -30,7 +30,7 @@ const uint8_t Font_16_Matrix_NumBitmaps[] PROGMEM = {
   0xB6,0x06,0xD8	// char57
 };
 
-const GFXglyph Font_16_Matrix_NumGlyphs[] PROGMEM = {
+static const GFXglyph Font_16_Matrix_NumGlyphs[] PROGMEM = {
   { 0, 14, 20, 16, 1, -20 },	// char48
   { 35, 8, 20, 16, 4, -20 },	// char49
   { 55, 14, 20, 16, 1, -20 },	// char50
@@ -43,7 +43,7 @@ const GFXglyph Font_16_Matrix_NumGlyphs[] PROGMEM = {
   { 300, 14, 20, 16, 1, -20 }	// char57
 };
 
-const GFXfont Font_16_Matrix_Num PROGMEM = {
+static const GFXfont Font_16_Matrix_Num PROGMEM = {
  (uint8_t *)Font_16_Matrix_NumBitmaps,
  (GFXglyph *)Font_16_Matrix_NumGlyphs,
  48, 57, 22};

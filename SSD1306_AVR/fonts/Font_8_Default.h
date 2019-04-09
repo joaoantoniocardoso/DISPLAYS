@@ -1,4 +1,4 @@
-﻿const uint8_t Font_8_DefaultBitmaps[] PROGMEM = {
+﻿static const uint8_t Font_8_DefaultBitmaps[] PROGMEM = {
   0xFD,	// symbol '!'
   0x5A,0xA0,	// symbol
   0x28,0xAF,0xCA,0x53,0xF5,0x14,	// symbol '#'
@@ -95,7 +95,7 @@
   0x42,0x91,0x80	// symbol '~'
 };
 
-const GFXglyph Font_8_DefaultGlyphs[] PROGMEM = {
+static const GFXglyph Font_8_DefaultGlyphs[] PROGMEM = {
   { 0, 0, 0, 8, 0, 0 },	// SPC
   { 0, 1, 8, 8, 2, -9 },	// symbol '!'
   { 1, 4, 3, 8, 1, -10 },	// symbol
@@ -193,7 +193,7 @@ const GFXglyph Font_8_DefaultGlyphs[] PROGMEM = {
   { 411, 6, 3, 8, 0, -11 }	// symbol '~'
 };
 
-const GFXfont Font_8_Default PROGMEM = {
+static const GFXfont Font_8_Default PROGMEM = {
  (uint8_t *)Font_8_DefaultBitmaps,
  (GFXglyph *)Font_8_DefaultGlyphs,
  32, 126, 12};

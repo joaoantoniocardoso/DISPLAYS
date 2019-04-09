@@ -1,4 +1,4 @@
-const uint8_t Font_32_Segment_7_Num_PlusBitmaps[] PROGMEM = {
+static const uint8_t Font_32_Segment_7_Num_PlusBitmaps[] PROGMEM = {
   0x38,0xFB,0xFF,0xFF,0xEF,0x8E,0x00,	// char46
   0x03,0xFF,0xF8,0x00,0xFF,0xFF,0x80,0x3F,0xFF,0xF8,0x03,0xFF,0xFE,0xC3,0x3F,0xFF,
   0xBC,0xF0,0x00,0x0F,0xFF,0x00,0x01,0xFF,0xE0,0x00,0x3F,0xFC,0x00,0x07,0xFF,0x80,
@@ -92,7 +92,7 @@ const uint8_t Font_32_Segment_7_Num_PlusBitmaps[] PROGMEM = {
   0x00,0x00,0x07,0x1F,0x7F,0xFF,0xFD,0xF1,0xC0	// char58
 };
 
-const GFXglyph Font_32_Segment_7_Num_PlusGlyphs[] PROGMEM = {
+static const GFXglyph Font_32_Segment_7_Num_PlusGlyphs[] PROGMEM = {
   { 0, 7, 7, 32, 14, -11 },	// char46
   { 7, 0, 0, 32, 0, 0 },	// char47
   { 7, 27, 46, 32, 2, -47 },	// char48
@@ -108,7 +108,7 @@ const GFXglyph Font_32_Segment_7_Num_PlusGlyphs[] PROGMEM = {
   { 1370, 7, 28, 32, 14, -37 }	// char58
 };
 
-const GFXfont Font_32_Segment_7_Num_Plus PROGMEM = {
+static const GFXfont Font_32_Segment_7_Num_Plus PROGMEM = {
  (uint8_t *)Font_32_Segment_7_Num_PlusBitmaps,
  (GFXglyph *)Font_32_Segment_7_Num_PlusGlyphs,
  46, 58, 50};

@@ -1,4 +1,4 @@
-const uint8_t Font_16_DefaultBitmaps[] PROGMEM = {
+static const uint8_t Font_16_DefaultBitmaps[] PROGMEM = {
   0x77,0xFF,0xFF,0xFD,0xCE,0x00,0x1C,0xE7,0x00,	// symbol '!'
   0xE3,0xF1,0xF8,0xFC,0x76,0x30,	// symbol
   0x18,0x60,0x61,0x81,0x86,0x3F,0xFF,0xFF,0xFC,0x61,0x81,0x86,0x06,0x18,0x18,0x63,
@@ -110,7 +110,7 @@ const uint8_t Font_16_DefaultBitmaps[] PROGMEM = {
   0x7C,0x7E,0xE7,0xE7,0x7E,0x3E	// symbol '~'
 };
 
-const GFXglyph Font_16_DefaultGlyphs[] PROGMEM = {
+static const GFXglyph Font_16_DefaultGlyphs[] PROGMEM = {
   { 0, 0, 0, 16, 0, 0 },	// SPC
   { 0, 5, 13, 16, 4, -13 },	// symbol '!'
   { 9, 9, 5, 16, 4, -14 },	// symbol
@@ -208,7 +208,7 @@ const GFXglyph Font_16_DefaultGlyphs[] PROGMEM = {
   { 1192, 12, 4, 16, 2, -13 }	// symbol '~'
 };
 
-const GFXfont Font_16_Default PROGMEM = {
+static const GFXfont Font_16_Default PROGMEM = {
  (uint8_t *)Font_16_DefaultBitmaps,
  (GFXglyph *)Font_16_DefaultGlyphs,
  32, 126, 16};

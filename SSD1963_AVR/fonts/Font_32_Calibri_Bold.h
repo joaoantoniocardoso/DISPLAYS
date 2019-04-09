@@ -1,4 +1,4 @@
-const uint8_t Font_32_Calibri_BoldBitmaps[] PROGMEM = {
+static const uint8_t Font_32_Calibri_BoldBitmaps[] PROGMEM = {
   0x00,0x3F,0xF8,0x00,0x03,0xFF,0xF8,0x00,0x3F,0xFF,0xF8,0x01,0xFF,0xFF,0xF0,0x0F,
   0xFF,0xFF,0xC0,0x3F,0xFF,0xFF,0x81,0xFF,0xFF,0xFF,0x07,0xFE,0x1F,0xFC,0x3F,0xF0,
   0x3F,0xF0,0xFF,0x80,0x7F,0xE3,0xFE,0x00,0xFF,0x9F,0xF0,0x03,0xFE,0x7F,0xC0,0x0F,
@@ -97,7 +97,7 @@ const uint8_t Font_32_Calibri_BoldBitmaps[] PROGMEM = {
   0x7F,0xF0,0x00	// char57
 };
 
-const GFXglyph Font_32_Calibri_BoldGlyphs[] PROGMEM = {
+static const GFXglyph Font_32_Calibri_BoldGlyphs[] PROGMEM = {
   { 0, 30, 42, 32, 0, -44 },	// char48
   { 158, 26, 41, 32, 4, -44 },	// char49
   { 292, 28, 41, 32, 2, -44 },	// char50
@@ -110,7 +110,7 @@ const GFXglyph Font_32_Calibri_BoldGlyphs[] PROGMEM = {
   { 1330, 28, 42, 32, 3, -44 }	// char57
 };
 
-const GFXfont Font_32_Calibri_Bold PROGMEM = {
+static const GFXfont Font_32_Calibri_Bold PROGMEM = {
  (uint8_t *)Font_32_Calibri_BoldBitmaps,
  (GFXglyph *)Font_32_Calibri_BoldGlyphs,
  48, 57, 48};

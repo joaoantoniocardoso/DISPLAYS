@@ -1,4 +1,4 @@
-const uint8_t Font_48_Segment_16_NumBitmaps[] PROGMEM = {
+static const uint8_t Font_48_Segment_16_NumBitmaps[] PROGMEM = {
   0x01,0xFF,0xC0,0x3F,0xF8,0x00,0x3F,0xFF,0x07,0xFF,0xE0,0x0F,0xFF,0xF9,0xFF,0xFF,
   0x00,0xFF,0xFF,0x9F,0xFF,0xF0,0x07,0xFF,0xF0,0xFF,0xFE,0x03,0x3F,0xFE,0x07,0xFF,
   0xCC,0x78,0x00,0x00,0x00,0x01,0xEF,0xC0,0x00,0x00,0x01,0xBF,0xFC,0x00,0x00,0x00,
@@ -228,7 +228,7 @@ const uint8_t Font_48_Segment_16_NumBitmaps[] PROGMEM = {
   0x00,0x3F,0xFE,0x07,0xFF,0xC0	// char57
 };
 
-const GFXglyph Font_48_Segment_16_NumGlyphs[] PROGMEM = {
+static const GFXglyph Font_48_Segment_16_NumGlyphs[] PROGMEM = {
   { 0, 44, 68, 48, 2, -69 },	// char48
   { 374, 36, 68, 48, 6, -69 },	// char49
   { 680, 44, 68, 48, 2, -69 },	// char50
@@ -241,7 +241,7 @@ const GFXglyph Font_48_Segment_16_NumGlyphs[] PROGMEM = {
   { 3161, 44, 68, 48, 2, -69 }	// char57
 };
 
-const GFXfont Font_48_Segment_16_Num PROGMEM = {
+static const GFXfont Font_48_Segment_16_Num PROGMEM = {
  (uint8_t *)Font_48_Segment_16_NumBitmaps,
  (GFXglyph *)Font_48_Segment_16_NumGlyphs,
  48, 57, 72};

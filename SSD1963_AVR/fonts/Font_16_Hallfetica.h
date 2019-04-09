@@ -1,4 +1,4 @@
-const uint8_t Font_16_HallfeticaBitmaps[] PROGMEM = {
+static const uint8_t Font_16_HallfeticaBitmaps[] PROGMEM = {
   0xFF,0xFF,0x0C,	// char33
   0xDE,0xF6,	// char34
   0x36,0x36,0xFF,0x36,0x36,0xFF,0x36,	// char35
@@ -99,7 +99,7 @@ const uint8_t Font_16_HallfeticaBitmaps[] PROGMEM = {
   0x78,0x33,0x3C,0xDC,0x1E	// char126
 };
 
-const GFXglyph Font_16_HallfeticaGlyphs[] PROGMEM = {
+static const GFXglyph Font_16_HallfeticaGlyphs[] PROGMEM = {
   { 0, 0, 0, 16, 0, 0 },	// char32
   { 0, 2, 11, 16, 6, -12 },	// char33
   { 3, 5, 3, 16, 6, -12 },	// char34
@@ -197,7 +197,7 @@ const GFXglyph Font_16_HallfeticaGlyphs[] PROGMEM = {
   { 932, 10, 4, 16, 4, -13 }	// char126
 };
 
-const GFXfont Font_16_Hallfetica PROGMEM = {
+static const GFXfont Font_16_Hallfetica PROGMEM = {
  (uint8_t *)Font_16_HallfeticaBitmaps,
  (GFXglyph *)Font_16_HallfeticaGlyphs,
  32, 126, 16};

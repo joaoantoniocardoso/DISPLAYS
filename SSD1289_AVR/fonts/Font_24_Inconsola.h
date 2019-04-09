@@ -1,4 +1,4 @@
-const uint8_t Font_24_InconsolaBitmaps[] PROGMEM = {
+static const uint8_t Font_24_InconsolaBitmaps[] PROGMEM = {
   0x6F,0xFF,0xFF,0xF7,0x76,0x66,0x66,0x66,0x66,0x00,0x06,0xFF,0xF0,	// char33
   0x30,0x23,0xC3,0xDE,0x1E,0xF8,0xF3,0x83,0x8C,0x1C,0xE0,0xC6,0x0E,0x60,0x66,0x06,
   0x00,	// char34
@@ -259,7 +259,7 @@ const uint8_t Font_24_InconsolaBitmaps[] PROGMEM = {
   0x3E,0x02,0x7F,0x87,0xE3,0xFE,0xC0,0xFC,0x00,0x70	// char126
 };
 
-const GFXglyph Font_24_InconsolaGlyphs[] PROGMEM = {
+static const GFXglyph Font_24_InconsolaGlyphs[] PROGMEM = {
   { 0, 0, 0, 24, 0, 0 },	// char32
   { 0, 4, 25, 24, 10, -31 },	// char33
   { 13, 13, 10, 24, 6, -31 },	// char34
@@ -357,7 +357,7 @@ const GFXglyph Font_24_InconsolaGlyphs[] PROGMEM = {
   { 3521, 16, 5, 24, 4, -18 }	// char126
 };
 
-const GFXfont Font_24_Inconsola PROGMEM = {
+static const GFXfont Font_24_Inconsola PROGMEM = {
  (uint8_t *)Font_24_InconsolaBitmaps,
  (GFXglyph *)Font_24_InconsolaGlyphs,
  32, 126, 32};

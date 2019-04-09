@@ -1,4 +1,4 @@
-const uint8_t Font_16_NadianneBitmaps[] PROGMEM = {
+static const uint8_t Font_16_NadianneBitmaps[] PROGMEM = {
   0x3C,0xE3,0x8E,0x30,0xC3,0x10,0xE3,0x8C,0x00,	// char33
   0x77,0x66,0x66,0x44,0xCC,0xCC,	// char34
   0x0C,0xC1,0x10,0x22,0x0C,0x47,0xFE,0x22,0x0C,0x47,0xFE,0x22,0x0C,0xC1,0x98,0x00,	// char35
@@ -127,7 +127,7 @@ const uint8_t Font_16_NadianneBitmaps[] PROGMEM = {
   0x3C,0x2F,0xFA,0x1F,0x00	// char126
 };
 
-const GFXglyph Font_16_NadianneGlyphs[] PROGMEM = {
+static const GFXglyph Font_16_NadianneGlyphs[] PROGMEM = {
   { 0, 0, 0, 16, 0, 0 },	// char32
   { 0, 6, 11, 16, 5, -12 },	// char33
   { 9, 8, 6, 16, 6, -12 },	// char34
@@ -225,7 +225,7 @@ const GFXglyph Font_16_NadianneGlyphs[] PROGMEM = {
   { 1273, 11, 3, 16, 4, -12 }	// char126
 };
 
-const GFXfont Font_16_Nadianne PROGMEM = {
+static const GFXfont Font_16_Nadianne PROGMEM = {
  (uint8_t *)Font_16_NadianneBitmaps,
  (GFXglyph *)Font_16_NadianneGlyphs,
  32, 126, 16};

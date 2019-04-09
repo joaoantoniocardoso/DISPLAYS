@@ -1,4 +1,4 @@
-const uint8_t Font_16_OCRBitmaps[] PROGMEM = {
+static const uint8_t Font_16_OCRBitmaps[] PROGMEM = {
   0xFF,0xFF,0xDB,0x6D,0xB0,0x07,0xFC,	// char33
   0xFF,0xFF,0xFF,0x3F,0xCF,0x73,0x98,0x66,0x19,0x86,	// char34
   0x33,0x0C,0xC3,0x30,0xCC,0xFF,0xFF,0xF3,0x30,0xCC,0x33,0x3F,0xFF,0xFC,0xCC,0x33,
@@ -172,7 +172,7 @@ const uint8_t Font_16_OCRBitmaps[] PROGMEM = {
   0x3C,0x7F,0xFF,0x1E,0x00	// char126
 };
 
-const GFXglyph Font_16_OCRGlyphs[] PROGMEM = {
+static const GFXglyph Font_16_OCRGlyphs[] PROGMEM = {
   { 0, 0, 0, 16, 0, 0 },	// char32
   { 0, 3, 18, 16, 6, -22 },	// char33
   { 7, 10, 8, 16, 3, -22 },	// char34
@@ -270,7 +270,7 @@ const GFXglyph Font_16_OCRGlyphs[] PROGMEM = {
   { 1815, 11, 3, 16, 3, -14 }	// char126
 };
 
-const GFXfont Font_16_OCR PROGMEM = {
+static const GFXfont Font_16_OCR PROGMEM = {
  (uint8_t *)Font_16_OCRBitmaps,
  (GFXglyph *)Font_16_OCRGlyphs,
  32, 126, 24};

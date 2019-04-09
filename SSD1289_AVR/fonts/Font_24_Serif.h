@@ -1,4 +1,4 @@
-const uint8_t Font_24_SerifBitmaps[] PROGMEM = {
+static const uint8_t Font_24_SerifBitmaps[] PROGMEM = {
   0x77, 0xBF, 0xFF, 0xFF, 0xFF, 0xFB, 0x9C, 0xE7, 0x39, 0xCE, 0x61, 0x08,
   0x42, 0x10, 0x84, 0x00, 0x00, 0xEF, 0xFF, 0xEE, 0x60, 0x6F, 0x0F, 0xF0,
   0xFF, 0x0F, 0xF0, 0xFF, 0x0F, 0x60, 0x66, 0x06, 0x60, 0x66, 0x06, 0x60,
@@ -585,7 +585,7 @@ const uint8_t Font_24_SerifBitmaps[] PROGMEM = {
   0x1F, 0x80, 0x00, 0xFF, 0x80, 0xC7, 0x0F, 0x87, 0xB8, 0x0F, 0xFC, 0x00,
   0x07, 0xC0 };
 
-const GFXglyph Font_24_SerifGlyphs[] PROGMEM = {
+static const GFXglyph Font_24_SerifGlyphs[] PROGMEM = {
   {     0,   0,   0,  12,    0,    1 },   // 0x20 ' '
   {     0,   5,  32,  16,    6,  -31 },   // 0x21 '!'
   {    20,  12,  12,  19,    4,  -31 },   // 0x22 '"'
@@ -682,7 +682,7 @@ const GFXglyph Font_24_SerifGlyphs[] PROGMEM = {
   {  6939,  11,  41,  23,    7,  -31 },   // 0x7D '}'
   {  6996,  22,   5,  23,    1,  -13 } }; // 0x7E '~'
 
-const GFXfont Font_24_Serif PROGMEM = {
+static const GFXfont Font_24_Serif PROGMEM = {
   (uint8_t  *)Font_24_SerifBitmaps,
   (GFXglyph *)Font_24_SerifGlyphs,
   0x20, 0x7E, 56 };

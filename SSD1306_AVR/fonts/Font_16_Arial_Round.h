@@ -1,4 +1,4 @@
-const uint8_t Font_16_Arial_RoundBitmaps[] PROGMEM = {
+static const uint8_t Font_16_Arial_RoundBitmaps[] PROGMEM = {
   0x6F,0xFF,0xFF,0xFF,0xFE,0x66,0x60,0x06,0xFF,0x60,	// char33
   0x63,0x63,0xC6,0xC6,0xE7,0xE7,0x63,	// char34
   0x0C,0x60,0xC6,0x1C,0xE1,0xCE,0xFF,0xFF,0xFF,0x19,0xC3,0x9C,0x39,0xC3,0x98,0xFF,
@@ -165,7 +165,7 @@ const uint8_t Font_16_Arial_RoundBitmaps[] PROGMEM = {
   0x78,0x3F,0xFF,0xFF,0xC1,0xE0	// char126
 };
 
-const GFXglyph Font_16_Arial_RoundGlyphs[] PROGMEM = {
+static const GFXglyph Font_16_Arial_RoundGlyphs[] PROGMEM = {
   { 0, 0, 0, 16, 0, 0 },	// char32
   { 0, 4, 19, 16, 6, -23 },	// char33
   { 10, 8, 7, 16, 4, -21 },	// char34
@@ -263,7 +263,7 @@ const GFXglyph Font_16_Arial_RoundGlyphs[] PROGMEM = {
   { 1869, 11, 4, 16, 2, -20 }	// char126
 };
 
-const GFXfont Font_16_Arial_Round PROGMEM = {
+static const GFXfont Font_16_Arial_Round PROGMEM = {
  (uint8_t *)Font_16_Arial_RoundBitmaps,
  (GFXglyph *)Font_16_Arial_RoundGlyphs,
  32, 126, 24};

@@ -1,4 +1,4 @@
-const uint8_t Font_12_Mono_BoldBitmaps[] PROGMEM = {
+static const uint8_t Font_12_Mono_BoldBitmaps[] PROGMEM = {
   0xFF, 0xFF, 0xFF, 0xF6, 0x66, 0x60, 0x6F, 0x60, 0xE7, 0xE7, 0x62, 0x42,
   0x42, 0x42, 0x42, 0x11, 0x87, 0x30, 0xC6, 0x18, 0xC3, 0x31, 0xFF, 0xFF,
   0xF9, 0x98, 0x33, 0x06, 0x60, 0xCC, 0x7F, 0xEF, 0xFC, 0x66, 0x0C, 0xC3,
@@ -145,7 +145,7 @@ const uint8_t Font_12_Mono_BoldBitmaps[] PROGMEM = {
   0x79, 0x83, 0x06, 0x0C, 0x18, 0x31, 0xE3, 0x80, 0x3C, 0x37, 0xE7, 0x67,
   0xE6, 0x1C };
 
-const GFXglyph Font_12_Mono_BoldGlyphs[] PROGMEM = {
+static const GFXglyph Font_12_Mono_BoldGlyphs[] PROGMEM = {
   {     0,   0,   0,  14,    0,    1 },   // 0x20 ' '
   {     0,   4,  15,  14,    5,  -14 },   // 0x21 '!'
   {     8,   8,   7,  14,    3,  -13 },   // 0x22 '"'
@@ -242,7 +242,7 @@ const GFXglyph Font_12_Mono_BoldGlyphs[] PROGMEM = {
   {  1707,   7,  19,  14,    4,  -14 },   // 0x7D '}'
   {  1724,  12,   4,  14,    1,   -7 } }; // 0x7E '~'
 
-const GFXfont Font_12_Mono_Bold PROGMEM = {
+static const GFXfont Font_12_Mono_Bold PROGMEM = {
   (uint8_t  *)Font_12_Mono_BoldBitmaps,
   (GFXglyph *)Font_12_Mono_BoldGlyphs,
   0x20, 0x7E, 24 };

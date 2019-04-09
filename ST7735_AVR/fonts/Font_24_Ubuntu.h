@@ -1,4 +1,4 @@
-const uint8_t Font_24_UbuntuBitmaps[] PROGMEM = {
+static const uint8_t Font_24_UbuntuBitmaps[] PROGMEM = {
   0x73,0x9C,0xE7,0x39,0xCE,0x73,0x9C,0xE7,0x39,0xCC,0x00,0x00,0xEF,0xFF,0xEE,	// char33
   0x1C,0x0E,0x3E,0x1F,0x3E,0x1F,0x3E,0x1F,0x1E,0x0F,0x0E,0x07,0x1C,0x0E,0x3C,0x1E,
   0xF8,0x7C,0xE0,0x70,	// char34
@@ -270,7 +270,7 @@ const uint8_t Font_24_UbuntuBitmaps[] PROGMEM = {
   0x1E,0x02,0x3F,0x03,0x7F,0xC7,0xE3,0xFE,0xC0,0xFC,0x40,0x78	// char126
 };
 
-const GFXglyph Font_24_UbuntuGlyphs[] PROGMEM = {
+static const GFXglyph Font_24_UbuntuGlyphs[] PROGMEM = {
   { 0, 0, 0, 24, 0, 0 },	// char32
   { 0, 5, 24, 24, 10, -30 },	// char33
   { 15, 16, 10, 24, 4, -30 },	// char34
@@ -368,7 +368,7 @@ const GFXglyph Font_24_UbuntuGlyphs[] PROGMEM = {
   { 3633, 16, 6, 24, 4, -30 }	// char126
 };
 
-const GFXfont Font_24_Ubuntu PROGMEM = {
+static const GFXfont Font_24_Ubuntu PROGMEM = {
  (uint8_t *)Font_24_UbuntuBitmaps,
  (GFXglyph *)Font_24_UbuntuGlyphs,
  32, 126, 32};

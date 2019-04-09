@@ -1,4 +1,4 @@
-const uint8_t Font_96_Segment_7_NumBitmaps[] PROGMEM = {
+static const uint8_t Font_96_Segment_7_NumBitmaps[] PROGMEM = {
   0x00,0x0F,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xC0,0x00,0x00,0x7F,0xFF,0xFF,0xFF,
   0xFF,0xFF,0xFF,0xFF,0x80,0x00,0x03,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x00,
   0x00,0x1F,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFE,0x00,0x00,0xFF,0xFF,0xFF,0xFF,
@@ -798,7 +798,7 @@ const uint8_t Font_96_Segment_7_NumBitmaps[] PROGMEM = {
   0x00	// digit '9'
 };
 
-const GFXglyph Font_96_Segment_7_NumGlyphs[] PROGMEM = {
+static const GFXglyph Font_96_Segment_7_NumGlyphs[] PROGMEM = {
   { 0, 86, 134, 96, 4, -138 },	// digit '0'
   { 1441, 10, 118, 96, 80, -130 },	// digit '1'
   { 1589, 86, 134, 96, 4, -138 },	// digit '2'
@@ -811,7 +811,7 @@ const GFXglyph Font_96_Segment_7_NumGlyphs[] PROGMEM = {
   { 11191, 86, 134, 96, 4, -138 }	// digit '9'
 };
 
-const GFXfont Font_96_Segment_7_Num PROGMEM = {
+static const GFXfont Font_96_Segment_7_Num PROGMEM = {
  (uint8_t *)Font_96_Segment_7_NumBitmaps,
  (GFXglyph *)Font_96_Segment_7_NumGlyphs,
  48, 57, 144};

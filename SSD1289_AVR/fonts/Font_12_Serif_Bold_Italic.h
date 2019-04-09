@@ -1,4 +1,4 @@
-const uint8_t FreeSerFont_12_Serif_Bold_ItalicBitmaps[] PROGMEM = {
+static const uint8_t FreeSerFont_12_Serif_Bold_ItalicBitmaps[] PROGMEM = {
   0x07, 0x07, 0x07, 0x0F, 0x0E, 0x0E, 0x0C, 0x0C, 0x08, 0x18, 0x10, 0x00,
   0x00, 0x60, 0xF0, 0xF0, 0x60, 0x61, 0xF1, 0xF8, 0xF8, 0x6C, 0x34, 0x12,
   0x08, 0x01, 0x8C, 0x06, 0x60, 0x31, 0x80, 0xCC, 0x06, 0x30, 0xFF, 0xF0,
@@ -187,7 +187,7 @@ const uint8_t FreeSerFont_12_Serif_Bold_ItalicBitmaps[] PROGMEM = {
   0x07, 0x03, 0x80, 0xE0, 0x30, 0x0C, 0x07, 0x01, 0x80, 0xE0, 0xE0, 0x00,
   0x38, 0x0F, 0xCD, 0x1F, 0x80, 0xE0 };
 
-const GFXglyph FreeSerFont_12_Serif_Bold_ItalicGlyphs[] PROGMEM = {
+static const GFXglyph FreeSerFont_12_Serif_Bold_ItalicGlyphs[] PROGMEM = {
   {     0,   0,   0,   6,    0,    1 },   // 0x20 ' '
   {     0,   8,  17,   9,    2,  -15 },   // 0x21 '!'
   {    17,   9,   7,  13,    4,  -15 },   // 0x22 '"'
@@ -284,7 +284,7 @@ const GFXglyph FreeSerFont_12_Serif_Bold_ItalicGlyphs[] PROGMEM = {
   {  2205,  10,  21,   8,   -3,  -16 },   // 0x7D '}'
   {  2232,  11,   4,  14,    1,   -7 } }; // 0x7E '~'
 
-const GFXfont FreeSerFont_12_Serif_Bold_Italic PROGMEM = {
+static const GFXfont FreeSerFont_12_Serif_Bold_Italic PROGMEM = {
   (uint8_t  *)FreeSerFont_12_Serif_Bold_ItalicBitmaps,
   (GFXglyph *)FreeSerFont_12_Serif_Bold_ItalicGlyphs,
   0x20, 0x7E, 29 };

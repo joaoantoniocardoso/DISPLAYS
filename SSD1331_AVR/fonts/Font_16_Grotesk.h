@@ -1,4 +1,4 @@
-const uint8_t Font_16_GroteskBitmaps[] PROGMEM = {
+static const uint8_t Font_16_GroteskBitmaps[] PROGMEM = {
   0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x00,0x01,0xFF,0xE0,	// char33
   0x30,0xCC,0x37,0x1D,0xC7,0xF3,0xF8,0xEE,0x3B,0x8E,0xE3,0xB8,0xE0,	// char34
   0x01,0x8C,0x03,0x8C,0x03,0x8C,0x03,0x1C,0x03,0x18,0x03,0x18,0x3F,0xFF,0x3F,0xFF,
@@ -252,7 +252,7 @@ const uint8_t Font_16_GroteskBitmaps[] PROGMEM = {
   0x00,0x7C,0x00,0x38	// char126
 };
 
-const GFXglyph Font_16_GroteskGlyphs[] PROGMEM = {
+static const GFXglyph Font_16_GroteskGlyphs[] PROGMEM = {
   { 0, 0, 0, 16, 0, 0 },	// char32
   { 0, 3, 25, 16, 7, -28 },	// char33
   { 10, 10, 10, 16, 3, -29 },	// char34
@@ -350,7 +350,7 @@ const GFXglyph Font_16_GroteskGlyphs[] PROGMEM = {
   { 3284, 16, 10, 16, 0, -22 }	// char126
 };
 
-const GFXfont Font_16_Grotesk PROGMEM = {
+static const GFXfont Font_16_Grotesk PROGMEM = {
  (uint8_t *)Font_16_GroteskBitmaps,
  (GFXglyph *)Font_16_GroteskGlyphs,
  32, 126, 32};

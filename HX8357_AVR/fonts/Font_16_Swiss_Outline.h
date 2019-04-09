@@ -1,4 +1,4 @@
-const uint8_t Font_16_Swiss_OutlineBitmaps[] PROGMEM = {
+static const uint8_t Font_16_Swiss_OutlineBitmaps[] PROGMEM = {
   0xF6,0xDB,0xB2,0x1E,0xF0,	// char33
   0x99,0x99,0x90,	// char34
   0x06,0x40,0x90,0x12,0x04,0x87,0xFE,0x12,0x04,0x87,0xFE,0x12,0x04,0x80,0x90,0x22,
@@ -109,7 +109,7 @@ const uint8_t Font_16_Swiss_OutlineBitmaps[] PROGMEM = {
   0x70,0x73,0x38,0x30	// char126
 };
 
-const GFXglyph Font_16_Swiss_OutlineGlyphs[] PROGMEM = {
+static const GFXglyph Font_16_Swiss_OutlineGlyphs[] PROGMEM = {
   { 0, 0, 0, 16, 0, 0 },	// char32
   { 0, 3, 12, 16, 6, -13 },	// char33
   { 5, 4, 5, 16, 6, -13 },	// char34
@@ -207,7 +207,7 @@ const GFXglyph Font_16_Swiss_OutlineGlyphs[] PROGMEM = {
   { 1087, 10, 3, 16, 3, -12 }	// char126
 };
 
-const GFXfont Font_16_Swiss_Outline PROGMEM = {
+static const GFXfont Font_16_Swiss_Outline PROGMEM = {
  (uint8_t *)Font_16_Swiss_OutlineBitmaps,
  (GFXglyph *)Font_16_Swiss_OutlineGlyphs,
  32, 126, 16};

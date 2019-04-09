@@ -1,4 +1,4 @@
-const uint8_t Font_8_TinyBitmaps[] PROGMEM = {
+static const uint8_t Font_8_TinyBitmaps[] PROGMEM = {
   0x6F,0xF6,0x60,0x60,	// char33
   0xCF,0x34,0x80,	// char34
   0x6C,0xDB,0xFB,0x6F,0xED,0x9B,0x00,	// char35
@@ -95,7 +95,7 @@ const uint8_t Font_8_TinyBitmaps[] PROGMEM = {
   0x77,0xB8	// char126
 };
 
-const GFXglyph Font_8_TinyGlyphs[] PROGMEM = {
+static const GFXglyph Font_8_TinyGlyphs[] PROGMEM = {
   { 0, 0, 0, 8, 0, 0 },	// char32
   { 0, 4, 7, 8, 2, -7 },	// char33
   { 4, 6, 3, 8, 1, -7 },	// char34
@@ -193,7 +193,7 @@ const GFXglyph Font_8_TinyGlyphs[] PROGMEM = {
   { 521, 7, 2, 8, 0, -7 }	// char126
 };
 
-const GFXfont Font_8_Tiny PROGMEM = {
+static const GFXfont Font_8_Tiny PROGMEM = {
  (uint8_t *)Font_8_TinyBitmaps,
  (GFXglyph *)Font_8_TinyGlyphs,
  32, 126, 8};
