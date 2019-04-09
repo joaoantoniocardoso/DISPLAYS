@@ -43,6 +43,9 @@ inline static void SSD1306_Send_Multi(uint8_t address, uint8_t reg, uint8_t* dat
 
 void SSD1306_Init(void)
 {
+
+    TWI_Init();
+    
 	_delay_ms(100);
 	SSD1306_Command(0x00, SSD1306_DISPLAYOFF);
 	SSD1306_Command(0x00, SSD1306_SETDISPLAYCLOCKDIV);

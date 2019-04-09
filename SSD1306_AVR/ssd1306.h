@@ -3,11 +3,16 @@
 
 #ifdef __cplusplus
 extern C {
-	#endif
+#endif // __cplusplus
 
-	#include "main.h"
-	
-	#define LCD_HEIGHT							   64 // 32 64
+	#include <util/delay.h>
+	#include <avr/pgmspace.h>
+    #include <string.h>
+	#include <ctype.h>
+    #include "twi.h"
+    #include "fonts.h"
+
+	#define LCD_HEIGHT							   64
 	#define LCD_WIDTH						      128
 	#define SSD1306_DEFAULT_SPACE					5
 	#define SSD1306_TWI_ADDRESS					 0x3C
@@ -45,8 +50,8 @@ extern C {
 	#define SSD1306_VERT_AND_RIGHT_HORIZ_SCROLL  0x29
 	#define SSD1306_VERT_AND_LEFT_HORIZ_SCROLL   0x2A
 
-	#define COMAND		                           0x00
-	#define DATA		                             0x40
+	#define COMAND		                         0x00
+	#define DATA		                         0x40
 
 	typedef enum {
 		SSD1306_COLOR_BLACK = 0x00,
@@ -92,6 +97,6 @@ extern C {
 
 	#ifdef __cplusplus
 }
-#endif
+#endif // __cplusplus
 
-#endif
+#endif // SSD1306_H_
