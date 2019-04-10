@@ -3,4 +3,4 @@ build
 Debug
 .dep
 .vs
-.a
+*.a
